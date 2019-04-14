@@ -12,9 +12,7 @@ class EmailParser
 
   def parse
     email_array = @emails.split(" ")
-    email_array.collect do |email|
-      email.split(",")[0]
-    end
+    email_array.collect{|email| email.split(",")[0]}.uniq
 
     email_array.uniq
   end
