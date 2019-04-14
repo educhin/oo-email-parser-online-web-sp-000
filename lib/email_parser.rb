@@ -15,5 +15,7 @@ class EmailParser
     email_array.collect do |email|
       email.split(",")[0]
     end
+
+    email_array.uniq
   end
 end
