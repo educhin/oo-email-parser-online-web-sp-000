@@ -6,4 +6,5 @@
 class EmailParser(file)
   def parse
 
+  end
 end
